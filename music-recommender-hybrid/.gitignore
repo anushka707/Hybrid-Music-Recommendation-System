@@ -1,9 +1,24 @@
+# Ignore raw + processed data
 data/raw/*
 data/processed/*
+
+# Ignore trained models
 models/*
-results/*
+
+# Allow results to be tracked (figures, metrics, etc.)
+!results/
+!results/**
+!results/**/*.*
+
+# Python cache
 *.pyc
 __pycache__/
+
+# Notebook checkpoints
 .ipynb_checkpoints/
+
+# Virtual environments
 venv/
+.venv/
+env/
 .env
